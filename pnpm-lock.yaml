@@ -18,8 +18,8 @@ importers:
         specifier: 0.3.1
         version: 0.3.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/databricks-testkit':
-        specifier: 0.2.1
-        version: 0.2.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.2.2
+        version: 0.2.2(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -430,8 +430,8 @@ packages:
       '@duckdb/node-api':
         optional: true
 
-  '@fabricorg/databricks-testkit@0.2.1':
-    resolution: {integrity: sha512-ugkKiJcPBSug7Lu6bZ4Vnxe+dnZM3mnQx8/MeLBNwdmS5UQf4cPud4u/eUpLE3x8jzzmOSBN6bv4rqw+CwCp5g==}
+  '@fabricorg/databricks-testkit@0.2.2':
+    resolution: {integrity: sha512-f5a3xqWKcdEnCoMtEM7bkZPaj3h75uc4iXdmz5d7IJiOwrzUxHVgJisH8rO//N4iK5l4dJdp4EpaYAhzqxPOcw==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
       vitest: '>=2'
@@ -2127,7 +2127,7 @@ snapshots:
     dependencies:
       '@cucumber/cucumber': 13.0.0
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.2.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.2.2(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
     transitivePeerDependencies:
@@ -2142,7 +2142,7 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-testkit@0.2.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-testkit@0.2.2(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-db-pool': 0.1.1
