@@ -18,14 +18,16 @@ pnpm test
 ```
 
 The run seeds an `experiment_results` table, queries it, and checks the expected
-rows through the published `@fabricorg/databricks-bdd` step library.
+rows through the published `@fabricorg/databricks-bdd` step library. A second
+scenario proves the published TypeScript action-composition, layered-state,
+cardinality, and active-capability APIs without importing workspace source.
 
 ## Inspect the example
 
 | File | Purpose |
 | --- | --- |
 | `features/published-package.feature` | Readable Given/When/Then scenario. |
-| `features/support/steps.ts` | One import registers Fabric's World, hooks, steps, cleanup, and evidence. |
+| `features/support/steps.ts` | Registers Fabric and demonstrates typed actions, layered state, and cardinality. |
 | `cucumber.mjs` | Feature discovery and JUnit, HTML, and Fabric evidence formatters. |
 | `package.json` | Exact public package versions used by the certification gate. |
 

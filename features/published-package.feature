@@ -10,3 +10,9 @@ Feature: Published Fabric Experiments packages work outside the monorepo
     And the result contains rows matching:
       | variant_key | conversions |
       | treatment   | 18          |
+
+  @requires.profile=local
+  Scenario: TypeScript provides Behave-equivalent composition and state
+    Given TypeScript run and feature state
+    When I remember columns "subject_id, event_name"
+    Then the layered state contains "subject_id, event_name"
