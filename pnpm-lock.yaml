@@ -15,11 +15,14 @@ importers:
         specifier: 1.5.4-r.1
         version: 1.5.4-r.1
       '@fabricorg/databricks-bdd':
-        specifier: 0.4.0
-        version: 0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.5.0
+        version: 0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/databricks-testkit':
-        specifier: 0.2.4
-        version: 0.2.4(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.3.0
+        version: 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/experiments':
+        specifier: 0.8.0
+        version: 0.8.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -422,16 +425,16 @@ packages:
       vitest:
         optional: true
 
-  '@fabricorg/databricks-bdd@0.4.0':
-    resolution: {integrity: sha512-SuOztvCuOJ1Xl6ceUkEvj1kaSbvcnj0lc1ZDtAm2wWLLiJGPEG8Ep8Nq+4XXwLtE8599MZJ3BDZzud+eUJ5hwA==}
+  '@fabricorg/databricks-bdd@0.5.0':
+    resolution: {integrity: sha512-C1pBuIJKeNIBGt4yaEt9sWlqdPz6zIl4L4OXnb71u4K3ZEShnJO94VpZ6KPGHnnshT31ZqwkwAx9tkGRqW0EZQ==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
     peerDependenciesMeta:
       '@duckdb/node-api':
         optional: true
 
-  '@fabricorg/databricks-testkit@0.2.4':
-    resolution: {integrity: sha512-VA2XqBdWL92a0HEXiBvdvnUBV9fe2rmOaZeTn2ydIaz0vwlNl7K8FkA6vD1lpsP+JWVPRzrEbMTEc/z3p9hm7Q==}
+  '@fabricorg/databricks-testkit@0.3.0':
+    resolution: {integrity: sha512-Y2zgbDJdZQwb40pK9GGA9krd5jFmaYt90SnVpC8pnC0UKoNuH0mJX5bzICVUvw51meZiZTdpx5g8hmLTBkFQEw==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
       vitest: '>=2'
@@ -446,6 +449,14 @@ packages:
 
   '@fabricorg/experiments-metrics@0.0.1':
     resolution: {integrity: sha512-g6EGvJ6P83FYs6DaB57cOj8rzRYgt5/mMws/gdRDNiMmm/2k4flxMmY3TY6J4WGRo96jEAB9CuB4xpyOKxB7xw==}
+
+  '@fabricorg/experiments-web@0.2.1':
+    resolution: {integrity: sha512-suVCuprewECUmgL9SClmcFOhfdwW1ZB4RfgpDUKzrNZ7MGrEv8EgvPPt7u/g0YRyj/CR7ezQ70po/3v6G2spuw==}
+
+  '@fabricorg/experiments@0.8.0':
+    resolution: {integrity: sha512-OQEpEDb77TwsXbbGdDpwXN+d3diNvMOi1+DZYCICnyC63WXczl2pfdZRfowWc9/Bgom4bQDNylUYpmniBLW8RQ==}
+    engines: {node: '>=22'}
+    hasBin: true
 
   '@google/genai@1.52.0':
     resolution: {integrity: sha512-gwSvbpiN/17O9TbsqSsE/OzZcpv5Fo4RQjdngGgogtuB9RsyJ8ZHhX5KjHj1bp5N9snN2eK8LDGXSaWW2hof8Q==}
@@ -2123,11 +2134,11 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-bdd@0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-bdd@0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@cucumber/cucumber': 13.0.0
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.2.4(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
     transitivePeerDependencies:
@@ -2142,7 +2153,7 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-testkit@0.2.4(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-testkit@0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-db-pool': 0.1.2
@@ -2167,6 +2178,27 @@ snapshots:
       - pg-native
 
   '@fabricorg/experiments-metrics@0.0.1': {}
+
+  '@fabricorg/experiments-web@0.2.1': {}
+
+  '@fabricorg/experiments@0.8.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+    dependencies:
+      '@fabricorg/databricks-testkit': 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/experiments-web': 0.2.1
+      fast-xml-parser: 5.10.0
+      yaml: 2.9.0
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@duckdb/node-api'
+      - '@fabric-harness/node'
+      - bufferutil
+      - pg
+      - pg-native
+      - supports-color
+      - utf-8-validate
+      - vitest
+      - ws
+      - zod
 
   '@google/genai@1.52.0(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))':
     dependencies:

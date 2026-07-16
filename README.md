@@ -19,8 +19,10 @@ pnpm test
 
 The run seeds an `experiment_results` table, queries it, and checks the expected
 rows through the published `@fabricorg/databricks-bdd` step library. A second
-scenario proves the published TypeScript action-composition, layered-state,
-cardinality, and active-capability APIs without importing workspace source.
+scenario proves typed action composition, layered state, cardinality, and
+active-capability APIs. The suite also executes the published `fx` binary and
+verifies all six built-in Databricks target packs are discoverable without
+importing workspace source.
 
 ## Inspect the example
 
@@ -30,6 +32,7 @@ cardinality, and active-capability APIs without importing workspace source.
 | `features/support/steps.ts` | Registers Fabric and demonstrates typed actions, layered state, and cardinality. |
 | `cucumber.mjs` | Feature discovery and JUnit, HTML, and Fabric evidence formatters. |
 | `package.json` | Exact public package versions used by the certification gate. |
+| `scripts/target-packs.mjs` | Clean-consumer assertion for the published `fx targets` registry. |
 
 After the run, open `reports/bdd.html`. CI also retains:
 
@@ -69,6 +72,7 @@ to the schema.
 - [Behavior-driven testing guide](https://experiments.fabric.pro/docs/testing/bdd/)
 - [Complete step catalog](https://experiments.fabric.pro/docs/testing/steps-catalog/)
 - [Advanced Databricks BDD](https://experiments.fabric.pro/docs/testing/advanced/)
+- [Databricks target packs](https://experiments.fabric.pro/docs/testing/target-packs/)
 - [Move from Behave](https://experiments.fabric.pro/docs/migration/behave/)
 - [Compatibility matrix](https://experiments.fabric.pro/docs/migration/compatibility/)
 
