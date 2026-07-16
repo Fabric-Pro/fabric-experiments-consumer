@@ -12,6 +12,14 @@ const expected = [
   'unity-storage',
   'apps-operational',
   'lakeflow-jobs',
+  'streaming-cdc-connect',
+  'aibi-genie',
+  'mlflow-lifecycle',
+  'feature-engineering-serving',
+  'model-serving-gateway',
+  'vector-rag-agents',
+  'federation-sharing-cleanrooms',
+  'security-cost-dr',
 ];
 
 for (const id of expected) {
@@ -21,4 +29,4 @@ if (parsed.packs.length !== expected.length) {
   throw new Error(`Expected ${expected.length} target packs, received ${parsed.packs.length}`);
 }
 
-console.log(`Verified ${expected.length} published target packs through fx 0.9.0`);
+console.log(`Verified ${expected.length} published target packs through fx 0.10.0`);

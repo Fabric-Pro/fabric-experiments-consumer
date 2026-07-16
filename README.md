@@ -21,7 +21,7 @@ The run seeds an `experiment_results` table, queries it, and checks the expected
 rows through the published `@fabricorg/databricks-bdd` step library. A second
 scenario proves typed action composition, layered state, cardinality, and
 active-capability APIs. The suite also executes the published `fx` binary and
-verifies all six built-in Databricks target packs are discoverable without
+verifies all 14 built-in Databricks target packs are discoverable without
 importing workspace source.
 
 ## Inspect the example
