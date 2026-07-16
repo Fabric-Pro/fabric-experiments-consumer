@@ -15,14 +15,14 @@ importers:
         specifier: 1.5.4-r.1
         version: 1.5.4-r.1
       '@fabricorg/databricks-bdd':
-        specifier: 0.5.0
-        version: 0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.6.0
+        version: 0.6.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/databricks-testkit':
-        specifier: 0.3.0
-        version: 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.4.0
+        version: 0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments':
-        specifier: 0.8.0
-        version: 0.8.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.9.0
+        version: 0.9.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -425,16 +425,16 @@ packages:
       vitest:
         optional: true
 
-  '@fabricorg/databricks-bdd@0.5.0':
-    resolution: {integrity: sha512-C1pBuIJKeNIBGt4yaEt9sWlqdPz6zIl4L4OXnb71u4K3ZEShnJO94VpZ6KPGHnnshT31ZqwkwAx9tkGRqW0EZQ==}
+  '@fabricorg/databricks-bdd@0.6.0':
+    resolution: {integrity: sha512-h6VDutsZMqRO8YCsc70//pd/hqIcPS/MgQHBWOI3CEsFFwR7RXdFlp7jgQUAcxx/fqkHKscd9qPi2P6Qi8Y/uA==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
     peerDependenciesMeta:
       '@duckdb/node-api':
         optional: true
 
-  '@fabricorg/databricks-testkit@0.3.0':
-    resolution: {integrity: sha512-Y2zgbDJdZQwb40pK9GGA9krd5jFmaYt90SnVpC8pnC0UKoNuH0mJX5bzICVUvw51meZiZTdpx5g8hmLTBkFQEw==}
+  '@fabricorg/databricks-testkit@0.4.0':
+    resolution: {integrity: sha512-lMg1uKNwoa/ahjNK//TN401F+UgEfMTrrR1XfVOpm4Qet94GgPwTTG+5nHX9K1BRGWKlGGO9ayGYHkcu6ENU5w==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
       vitest: '>=2'
@@ -453,8 +453,8 @@ packages:
   '@fabricorg/experiments-web@0.2.1':
     resolution: {integrity: sha512-suVCuprewECUmgL9SClmcFOhfdwW1ZB4RfgpDUKzrNZ7MGrEv8EgvPPt7u/g0YRyj/CR7ezQ70po/3v6G2spuw==}
 
-  '@fabricorg/experiments@0.8.0':
-    resolution: {integrity: sha512-OQEpEDb77TwsXbbGdDpwXN+d3diNvMOi1+DZYCICnyC63WXczl2pfdZRfowWc9/Bgom4bQDNylUYpmniBLW8RQ==}
+  '@fabricorg/experiments@0.9.0':
+    resolution: {integrity: sha512-Llwy2M2qBJQLrB446A6uWQJvxIDtWxa06E8AIQUbw0e+38rhN9W7GY/AbvtN6bfUBAeBv3xA23+CC0xV1RFjMw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2134,11 +2134,11 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-bdd@0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-bdd@0.6.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@cucumber/cucumber': 13.0.0
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
     transitivePeerDependencies:
@@ -2153,7 +2153,7 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-testkit@0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-testkit@0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-db-pool': 0.1.2
@@ -2181,9 +2181,9 @@ snapshots:
 
   '@fabricorg/experiments-web@0.2.1': {}
 
-  '@fabricorg/experiments@0.8.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/experiments@0.9.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
-      '@fabricorg/databricks-testkit': 0.3.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.4.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-web': 0.2.1
       fast-xml-parser: 5.10.0
       yaml: 2.9.0

@@ -21,4 +21,4 @@ if (parsed.packs.length !== expected.length) {
   throw new Error(`Expected ${expected.length} target packs, received ${parsed.packs.length}`);
 }
 
-console.log(`Verified ${expected.length} published target packs through fx 0.8.0`);
+console.log(`Verified ${expected.length} published target packs through fx 0.9.0`);
