@@ -6,12 +6,12 @@
   "packageManager": "pnpm@10.10.0",
   "scripts": {
     "test": "DBX_TEST_PROFILE=local cucumber-js",
-    "test:published": "npm view @fabricorg/databricks-testkit@0.2.4 version && npm view @fabricorg/databricks-bdd@0.3.1 version && npm test"
+    "test:published": "npm view @fabricorg/databricks-testkit@0.2.4 version && npm view @fabricorg/databricks-bdd@0.3.2 version && npm test"
   },
   "devDependencies": {
     "@cucumber/cucumber": "13.0.0",
     "@duckdb/node-api": "1.5.4-r.1",
-    "@fabricorg/databricks-bdd": "0.3.1",
+    "@fabricorg/databricks-bdd": "0.3.2",
     "@fabricorg/databricks-testkit": "0.2.4",
     "tsx": "4.20.6"
   }
