@@ -1,4 +1,14 @@
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
+
+const packageJson = JSON.parse(
+  readFileSync(new URL('../package.json', import.meta.url), 'utf8'),
+);
+const expectedCliVersion = packageJson.devDependencies['@fabricorg/experiments'];
+const actualCliVersion = execFileSync('fx', ['--version'], { encoding: 'utf8' }).trim();
+if (actualCliVersion !== `fx ${expectedCliVersion}`) {
+  throw new Error(`Expected fx ${expectedCliVersion}, received '${actualCliVersion}'`);
+}
 
 const output = execFileSync('fx', ['targets', 'list', '--json'], {
   encoding: 'utf8',
@@ -29,4 +39,4 @@ if (parsed.packs.length !== expected.length) {
   throw new Error(`Expected ${expected.length} target packs, received ${parsed.packs.length}`);
 }
 
-console.log(`Verified ${expected.length} published target packs through fx 0.10.0`);
+console.log(`Verified ${expected.length} published target packs through ${actualCliVersion}`);

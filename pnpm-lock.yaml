@@ -15,14 +15,14 @@ importers:
         specifier: 1.5.4-r.1
         version: 1.5.4-r.1
       '@fabricorg/databricks-bdd':
-        specifier: 0.7.0
-        version: 0.7.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.7.1
+        version: 0.7.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/databricks-testkit':
-        specifier: 0.5.0
-        version: 0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.6.1
+        version: 0.6.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments':
-        specifier: 0.10.0
-        version: 0.10.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.11.1
+        version: 0.11.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -425,16 +425,16 @@ packages:
       vitest:
         optional: true
 
-  '@fabricorg/databricks-bdd@0.7.0':
-    resolution: {integrity: sha512-g9rkrxnGvWaIX8t9KiTVfjfDDxCax31N34bolEmouUFCYNW1HBNwRoIP7Ks3ct8SlgeX04+desk6mhz6xEs5mg==}
+  '@fabricorg/databricks-bdd@0.7.1':
+    resolution: {integrity: sha512-71UOhj85hQJFKFgIO8uwvjWsX/Np7u7g3/Ij2jJbJ/YqwYtDDCSXQc+DnhyzS1QsoiKO/3svbR5w86QcW4t3uw==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
     peerDependenciesMeta:
       '@duckdb/node-api':
         optional: true
 
-  '@fabricorg/databricks-testkit@0.5.0':
-    resolution: {integrity: sha512-VABmMWdio2iVqNanvaTjtayifGltHzaa7JLQ5L+VibaDuy2ssXrJ9tmfmK/VCbcJ5dvPQG3IDe/4/3zhDGIZvA==}
+  '@fabricorg/databricks-testkit@0.6.1':
+    resolution: {integrity: sha512-BcoeklFUEZ72CAbGQr8wMN/Hv27RyjYZ/KMi7VSVuXFI2fS6EMs05lJ1wMyrJFw/+n2MwVKq315vS31zWenxKQ==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
       vitest: '>=2'
@@ -453,8 +453,8 @@ packages:
   '@fabricorg/experiments-web@0.2.1':
     resolution: {integrity: sha512-suVCuprewECUmgL9SClmcFOhfdwW1ZB4RfgpDUKzrNZ7MGrEv8EgvPPt7u/g0YRyj/CR7ezQ70po/3v6G2spuw==}
 
-  '@fabricorg/experiments@0.10.0':
-    resolution: {integrity: sha512-cLEfdNaZ3/tyeiuvxC9/lZOx/z1qZhGDEX23XoMq1Gmr71trw3bmb9ehCXH7q6mFz8RQu4ldEx3q1EY06evzbA==}
+  '@fabricorg/experiments@0.11.1':
+    resolution: {integrity: sha512-5N4vN43aAdmuFNMGdyvPIr7MOsIIfBd0IdhRYBU1Ed30QY9nZxQtBymYABVESH0gHXpxuMNB/lFXzFhIt+xqMQ==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2134,11 +2134,11 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-bdd@0.7.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-bdd@0.7.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@cucumber/cucumber': 13.0.0
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.6.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
     transitivePeerDependencies:
@@ -2153,7 +2153,7 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-testkit@0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-testkit@0.6.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@fabric-harness/databricks': 1.2.3(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-db-pool': 0.1.2
@@ -2181,9 +2181,9 @@ snapshots:
 
   '@fabricorg/experiments-web@0.2.1': {}
 
-  '@fabricorg/experiments@0.10.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/experiments@0.11.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
-      '@fabricorg/databricks-testkit': 0.5.0(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.6.1(@duckdb/node-api@1.5.4-r.1)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-web': 0.2.1
       fast-xml-parser: 5.10.0
       yaml: 2.9.0
