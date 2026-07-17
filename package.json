@@ -7,14 +7,14 @@
   "scripts": {
     "test": "DBX_TEST_PROFILE=local cucumber-js",
     "test:targets": "node scripts/target-packs.mjs",
-    "test:published": "npm view @fabricorg/databricks-testkit@0.6.1 version && npm view @fabricorg/databricks-bdd@0.7.1 version && npm view @fabricorg/experiments@0.11.1 version && npm test && npm run test:targets"
+    "test:published": "npm view @fabricorg/databricks-testkit@0.6.2 version && npm view @fabricorg/databricks-bdd@0.7.2 version && npm view @fabricorg/experiments@0.12.0 version && npm test && npm run test:targets"
   },
   "devDependencies": {
     "@cucumber/cucumber": "13.0.0",
     "@duckdb/node-api": "1.5.4-r.1",
-    "@fabricorg/databricks-bdd": "0.7.1",
-    "@fabricorg/databricks-testkit": "0.6.1",
-    "@fabricorg/experiments": "0.11.1",
+    "@fabricorg/databricks-bdd": "0.7.2",
+    "@fabricorg/databricks-testkit": "0.6.2",
+    "@fabricorg/experiments": "0.12.0",
     "tsx": "4.20.6"
   }
 }
