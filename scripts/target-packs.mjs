@@ -1,18 +1,22 @@
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 
 const packageJson = JSON.parse(
   readFileSync(new URL('../package.json', import.meta.url), 'utf8'),
 );
 const expectedCliVersion = packageJson.devDependencies['@fabricorg/experiments'];
-const actualCliVersion = execFileSync('fx', ['--version'], { encoding: 'utf8' }).trim();
+const fxEntrypoint = fileURLToPath(
+  new URL('../node_modules/@fabricorg/experiments/dist/bin/fx.js', import.meta.url),
+);
+const runFx = (args) =>
+  execFileSync(process.execPath, [fxEntrypoint, ...args], { encoding: 'utf8' });
+const actualCliVersion = runFx(['--version']).trim();
 if (actualCliVersion !== `fx ${expectedCliVersion}`) {
   throw new Error(`Expected fx ${expectedCliVersion}, received '${actualCliVersion}'`);
 }
 
-const output = execFileSync('fx', ['targets', 'list', '--json'], {
-  encoding: 'utf8',
-});
+const output = runFx(['targets', 'list', '--json']);
 const parsed = JSON.parse(output);
 const ids = new Set(parsed.packs?.map((pack) => pack.id));
 const expected = [
