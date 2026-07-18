@@ -30,7 +30,8 @@ importing workspace source.
 | --- | --- |
 | `features/published-package.feature` | Readable Given/When/Then scenario. |
 | `features/support/steps.ts` | Registers Fabric and demonstrates typed actions, layered state, and cardinality. |
-| `cucumber.mjs` | Feature discovery and JUnit, HTML, and Fabric evidence formatters. |
+| `cucumber.mjs` | Cross-platform local-profile default plus feature discovery and JUnit, HTML, and Fabric evidence formatters. |
+| `cucumber-register.mjs` | Registers the `tsx` loader explicitly, including on early Node 22 releases. |
 | `package.json` | Exact public package versions used by the certification gate. |
 | `scripts/target-packs.mjs` | Clean-consumer assertion for the published `fx targets` registry. |
 

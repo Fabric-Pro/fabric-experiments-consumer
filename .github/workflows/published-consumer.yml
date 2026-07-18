@@ -10,7 +10,11 @@ on:
 
 jobs:
   local-consumer:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -18,13 +22,15 @@ jobs:
           version: 10.10.0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          # Exercise the documented lower Node 22 boundary, before native
+          # TypeScript stripping became implicit.
+          node-version: 22.13.1
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run test:published
       - if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: published-consumer-evidence
+          name: published-consumer-evidence-${{ matrix.os }}
           path: reports/
           if-no-files-found: error

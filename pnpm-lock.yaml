@@ -15,14 +15,14 @@ importers:
         specifier: 1.5.4-r.1
         version: 1.5.4-r.1
       '@fabricorg/databricks-bdd':
-        specifier: 0.7.2
-        version: 0.7.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.8.0
+        version: 0.8.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/databricks-testkit':
-        specifier: 0.6.2
-        version: 0.6.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.7.0
+        version: 0.7.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments':
-        specifier: 0.12.0
-        version: 0.12.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+        specifier: 0.13.0
+        version: 0.13.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -572,8 +572,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fabric-harness/cli@2.7.0':
-    resolution: {integrity: sha512-pTAE10dD9/BdN+RBQvLIWHfv+9dIfcWHEbrbvQuNaSYvKGIi2IOXlY5s6gj4hd9nzqx/U/kBiFAzczt3uFyUPw==}
+  '@fabric-harness/cli@2.8.0':
+    resolution: {integrity: sha512-1LkJdRywjGdv7eYhl4+S/7FCj6H7z7JX17wLBVHFJk0Q63yUoo2NF70leyI1UVz41Ak8gbpYSVg+iuBI5qNzrQ==}
     engines: {node: '>=20.18.0'}
     hasBin: true
     peerDependencies:
@@ -585,8 +585,8 @@ packages:
       '@fabric-harness/temporal':
         optional: true
 
-  '@fabric-harness/databricks@1.7.0':
-    resolution: {integrity: sha512-/qfWhbg6SQSR2N/CGbuLgmh7WsmeC4Jo6oAbMFopHjgL0AGcw32dcndsQtDG1Q8TgpahsH4VpHCesGQZt3uSPQ==}
+  '@fabric-harness/databricks@1.8.0':
+    resolution: {integrity: sha512-lD2VJ9rZs4EDwDO9q3Gobiieq+sWQhtzWjekMwnwx2ScQNr4DF1oCmSeyIH847aBubS5VgpgCegEZQXw2unBRg==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       '@fabric-harness/node': '>=1.14.0 <3'
@@ -597,8 +597,8 @@ packages:
       pg:
         optional: true
 
-  '@fabric-harness/node@2.7.0':
-    resolution: {integrity: sha512-HK7iSD2+GCGU+fUibvlodNXXiufea77SZ3ifXqgGhCkVIFMxWKWwS18eG0Wz564Wz2uWwBmH4PaizVW0FETxsA==}
+  '@fabric-harness/node@2.8.0':
+    resolution: {integrity: sha512-29Qj0n/GnOo4j6/smaXaLGuqRmECm2W+NLdx4PbiGMT7nQU9QpM15UEkMj2vBNo/2sxt69qMyb7Le0E/EyuGbw==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       '@fabric-harness/databricks': '>=1.0.0 <2'
@@ -627,8 +627,8 @@ packages:
       ws:
         optional: true
 
-  '@fabric-harness/sdk@2.7.0':
-    resolution: {integrity: sha512-LLOEA8BnOJT4Qt7PzFO6CwhJg261xVqFXUn1R558YUC4pDuEZRZdbOA3J9CrGkpEtTlmKuglcJubG7WcfJpWyA==}
+  '@fabric-harness/sdk@2.8.0':
+    resolution: {integrity: sha512-Gx+nPOhfXhcZDul6kAw7Ph9S2C3YllxL+UQ90PCIbrR5cqyXzthDiEUJdEwPcxvNKDUCMQU43RDoSp6rFriPYw==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       vitest: '>=2 <5'
@@ -636,16 +636,16 @@ packages:
       vitest:
         optional: true
 
-  '@fabricorg/databricks-bdd@0.7.2':
-    resolution: {integrity: sha512-7q1WNVeo+YNw8xLr+FUKrXriWK4gIkqpnvoOmXPEQV5oJK7tActpaJMXpNeUTUDp6xyiSpTGc40Z79WI8B4ocQ==}
+  '@fabricorg/databricks-bdd@0.8.0':
+    resolution: {integrity: sha512-XaiXyNxnm9EimHtRvTB+tac5a2iaVV2BKVB5MJDqse+c8YyF4ztZ10O+ehutJ6qwz7Z9dsmKMFchLqx/1rpoWA==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
     peerDependenciesMeta:
       '@duckdb/node-api':
         optional: true
 
-  '@fabricorg/databricks-testkit@0.6.2':
-    resolution: {integrity: sha512-NJP/0Ib2l1H5d8w8JCUtD61jSwVP5Wwa3lpaz8QAHhIgUiWGBjq3vCOwLSukN1wrdNh1zPfo40CiO9WP9Ljb+A==}
+  '@fabricorg/databricks-testkit@0.7.0':
+    resolution: {integrity: sha512-M/6meG6gJxoqc6Ok18KPGUVYmhzliGTZVfDMI5DFCKpSBfnwI3f6bXN5So8uh1TQ3WZFCgGWKYBs0AcRC0gitQ==}
     peerDependencies:
       '@duckdb/node-api': '>=1.4.0'
       vitest: '>=2'
@@ -655,17 +655,23 @@ packages:
       vitest:
         optional: true
 
+  '@fabricorg/experiments-assignment@0.0.2':
+    resolution: {integrity: sha512-E/JrEOMPGEW6mDdH7nrZ5CY4cvGjw422GFgWmSxerOqMIy8FfbpTUooznNLdzdRvkZcurVSAIYpg6HRMsqWUpw==}
+
   '@fabricorg/experiments-db-pool@0.1.2':
     resolution: {integrity: sha512-6fEvYmLCDuf2G+oW7RhvLaLizvcE1/yUBXbYoEup0WbWFFMQBSUIhtQvnYW+h7dOZrnI71ZYCbHXoyELVm5lnQ==}
+
+  '@fabricorg/experiments-manifest-signing@0.1.0':
+    resolution: {integrity: sha512-lO+TxQaksIfpVX4VeZUvzZz0ld2bmNv/RBKGKaCu6PXCiUQIkECH/G+BZxeXjVq5ohK57O5QUPiTwzv0zLyQjw==}
 
   '@fabricorg/experiments-metrics@0.0.1':
     resolution: {integrity: sha512-g6EGvJ6P83FYs6DaB57cOj8rzRYgt5/mMws/gdRDNiMmm/2k4flxMmY3TY6J4WGRo96jEAB9CuB4xpyOKxB7xw==}
 
-  '@fabricorg/experiments-web@0.2.1':
-    resolution: {integrity: sha512-suVCuprewECUmgL9SClmcFOhfdwW1ZB4RfgpDUKzrNZ7MGrEv8EgvPPt7u/g0YRyj/CR7ezQ70po/3v6G2spuw==}
+  '@fabricorg/experiments-web@0.3.0':
+    resolution: {integrity: sha512-rhFz3Bin4YG4YSPVGzvjrlQ5SXMNG9aTpwJiZMcpsvW1tjtWdZFXYeDBdUMbBkVI+xXwER+AKT4c6LO6chKVJw==}
 
-  '@fabricorg/experiments@0.12.0':
-    resolution: {integrity: sha512-Tb/PgeWFw55nwEo2YS6vJIUde6Iq4P4WSjdfiYZK4FdD4HrMM9GW6Ng8XbWhGAuwntF96Qw4sF1qk8GVtkChwA==}
+  '@fabricorg/experiments@0.13.0':
+    resolution: {integrity: sha512-H/lmhPrtqrwXJCoxeyS8AkcC20hP3drZhIvi9Wm5g/d5ElkuscbHeyJ5wIzwy8A9JzJKOAWlp56lJJTL5RfAyw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2584,12 +2590,12 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fabric-harness/cli@2.7.0(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabric-harness/cli@2.8.0(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@clack/prompts': 1.7.0
-      '@fabric-harness/databricks': 1.7.0(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabric-harness/node': 2.7.0(@fabric-harness/databricks@1.7.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)
-      '@fabric-harness/sdk': 2.7.0(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/databricks': 1.8.0(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/node': 2.8.0(@fabric-harness/databricks@1.8.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/sdk': 2.8.0(ws@8.21.1)(zod@4.4.3)
       commander: 15.0.0
       ink: 6.8.0(react@19.2.7)
       react: 19.2.7
@@ -2611,11 +2617,11 @@ snapshots:
       - ws
       - zod
 
-  '@fabric-harness/databricks@1.7.0(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabric-harness/databricks@1.8.0(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
-      '@fabric-harness/sdk': 2.7.0(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/sdk': 2.8.0(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
-      '@fabric-harness/node': 2.7.0(@fabric-harness/databricks@1.7.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/node': 2.8.0(@fabric-harness/databricks@1.8.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)
       pg: 8.22.0
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -2626,9 +2632,9 @@ snapshots:
       - ws
       - zod
 
-  '@fabric-harness/node@2.7.0(@fabric-harness/databricks@1.7.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)':
+  '@fabric-harness/node@2.8.0(@fabric-harness/databricks@1.8.0)(jose@6.2.3)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
-      '@fabric-harness/sdk': 2.7.0(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/sdk': 2.8.0(ws@8.21.1)(zod@4.4.3)
       '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
       cron-parser: 5.6.2
       esbuild: 0.28.1
@@ -2636,7 +2642,7 @@ snapshots:
       undici: 7.28.0
       yaml: 2.9.0
     optionalDependencies:
-      '@fabric-harness/databricks': 1.7.0(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/databricks': 1.8.0(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       jose: 6.2.3
       ws: 8.21.1
     transitivePeerDependencies:
@@ -2647,7 +2653,7 @@ snapshots:
       - vitest
       - zod
 
-  '@fabric-harness/sdk@2.7.0(ws@8.21.1)(zod@4.4.3)':
+  '@fabric-harness/sdk@2.8.0(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@earendil-works/pi-agent-core': 0.74.2(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@opentelemetry/api@1.9.1)(ws@8.21.1)(zod@4.4.3)
       '@earendil-works/pi-ai': 0.74.2(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@opentelemetry/api@1.9.1)(ws@8.21.1)(zod@4.4.3)
@@ -2662,11 +2668,11 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-bdd@0.7.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-bdd@0.8.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
       '@cucumber/cucumber': 13.0.0
-      '@fabric-harness/databricks': 1.7.0(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.6.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/databricks': 1.8.0(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.7.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
     transitivePeerDependencies:
@@ -2681,9 +2687,9 @@ snapshots:
       - ws
       - zod
 
-  '@fabricorg/databricks-testkit@0.6.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/databricks-testkit@0.7.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
     dependencies:
-      '@fabric-harness/databricks': 1.7.0(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabric-harness/databricks': 1.8.0(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
       '@fabricorg/experiments-db-pool': 0.1.2
     optionalDependencies:
       '@duckdb/node-api': 1.5.4-r.1
@@ -2698,6 +2704,8 @@ snapshots:
       - ws
       - zod
 
+  '@fabricorg/experiments-assignment@0.0.2': {}
+
   '@fabricorg/experiments-db-pool@0.1.2':
     dependencies:
       '@fabricorg/experiments-metrics': 0.0.1
@@ -2705,15 +2713,20 @@ snapshots:
     transitivePeerDependencies:
       - pg-native
 
+  '@fabricorg/experiments-manifest-signing@0.1.0': {}
+
   '@fabricorg/experiments-metrics@0.0.1': {}
 
-  '@fabricorg/experiments-web@0.2.1': {}
-
-  '@fabricorg/experiments@0.12.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+  '@fabricorg/experiments-web@0.3.0':
     dependencies:
-      '@fabric-harness/cli': 2.7.0(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/databricks-testkit': 0.6.2(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.7.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
-      '@fabricorg/experiments-web': 0.2.1
+      '@fabricorg/experiments-assignment': 0.0.2
+      '@fabricorg/experiments-manifest-signing': 0.1.0
+
+  '@fabricorg/experiments@0.13.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)':
+    dependencies:
+      '@fabric-harness/cli': 2.8.0(jose@6.2.3)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/databricks-testkit': 0.7.0(@duckdb/node-api@1.5.4-r.1)(@fabric-harness/node@2.8.0)(pg@8.22.0)(ws@8.21.1)(zod@4.4.3)
+      '@fabricorg/experiments-web': 0.3.0
       fast-xml-parser: 5.10.0
       yaml: 2.9.0
     transitivePeerDependencies:

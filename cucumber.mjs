@@ -1,6 +1,8 @@
+process.env.DBX_TEST_PROFILE ??= 'local';
+
 export default {
   paths: ['features/**/*.feature'],
-  import: ['features/support/steps.ts'],
+  import: ['cucumber-register.mjs'],
   format: [
     'progress',
     ['junit', 'reports/junit.xml'],
